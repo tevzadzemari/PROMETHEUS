@@ -1,29 +1,25 @@
 # PROMETHEUS
 
-A Python city simulation featuring rule-based citizen behavior, district movement, energy management, and CSV activity logs.
+A Python city simulation featuring rule-based citizens, district movement, energy management, and hunger.
 
 ## What it does
 
 - Simulates six turns in the city.
 - Moves Mira and Jon between Town Square, Market, and Park.
 - Citizens spend energy while moving and rest when their energy is low.
-- Prints each turn and the citizens' final locations and energy.
-- Saves a CSV log of each action in the `outputs` folder.
+- Hunger increases each turn. Hungry citizens travel to the Market to eat.
+- Prints each turn and the citizens' final locations, energy, and hunger.
+- Saves a timestamped CSV log in the `outputs` folder.
 
 ## Run the simulation
 
-From the project folder, run:
-
-```powershell
-py src\main.py
-```
+From the project folder, run `py src\main.py`.
 
 ## Project files
 
 - `src\main.py` — simulation code
 - `outputs\` — generated CSV logs
-- `data\` — reserved for future simulation data
 
 ## CSV log columns
 
-Each log includes the turn, citizen, event, district, and energy.
+Each log includes the turn, citizen, event, district, energy, and hunger.
