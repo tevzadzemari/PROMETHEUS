@@ -1,6 +1,6 @@
 # PROMETHEUS
 
-A small Python city simulation with two citizens who move between districts and manage their energy.
+A Python city simulation featuring rule-based citizen behavior, district movement, energy management, and CSV activity logs.
 
 ## What it does
 
